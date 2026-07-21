@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adelaide Tutor Reviews | Independent reviews of tutors across Adelaide</title>
+  <meta name="description" content="Independent, first-hand reviews of maths, English, science, primary, language and music tutors across Adelaide. Honest ratings, real experiences, no sponsored posts.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231d3a5f'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fff' font-family='Georgia,serif' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">A</span>
+        Adelaide Tutor Reviews
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Reviews</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Independent · Local · First-hand</p>
+        <h1>Honest reviews of Adelaide's tutors.</h1>
+        <p class="lede">I visit tutors and tutoring centres across Adelaide, sit in on sessions and talk to the families who use them. Then I write up exactly what I found. No sponsored posts, no affiliate links.</p>
+        <div class="hero-stats" id="hero-stats"></div>
+      </div>
+    </section>
+
+    <section class="container" aria-label="Browse reviews">
+      <div class="filter-panel">
+        <div class="filter-row">
+          <div class="search-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+            <input type="search" id="search" placeholder="Search by tutor, subject or keyword…" aria-label="Search reviews">
+          </div>
+          <div class="select-wrap">
+            <select id="suburb-filter" aria-label="Filter by suburb">
+              <option value="All">All suburbs</option>
+            </select>
+          </div>
+          <div class="select-wrap">
+            <select id="sort" aria-label="Sort reviews">
+              <option value="newest">Newest first</option>
+              <option value="rating">Highest rated</option>
+            </select>
+          </div>
+        </div>
+        <div class="chip-row" id="subject-chips" role="group" aria-label="Filter by subject"></div>
+      </div>
+
+      <div class="results-meta">
+        <span id="results-count"></span>
+        <button class="clear-filters" id="clear-filters" type="button">Clear filters</button>
+      </div>
+
+      <div class="cards" id="cards"></div>
+
+      <div class="empty-state" id="empty-state">
+        <h3>No reviews match</h3>
+        <p>Try a different search term or <button class="clear-filters visible" id="empty-clear" type="button" style="display:inline">clear all filters</button>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">Adelaide Tutor Reviews</div>
+        <p>First-hand, independent reviews of tutors and tutoring centres across Adelaide, South Australia. Written by a local, for local families.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">All reviews</a></li>
+          <li><a href="about.html">About &amp; methodology</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Disclaimer</h4>
+        <p>Reviews reflect my personal opinions and experiences at the time of writing. Prices and availability change, so always confirm details with the tutor directly.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Adelaide Tutor Reviews · All opinions my own</div>
+  </footer>
+
+  <script src="js/reviews-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

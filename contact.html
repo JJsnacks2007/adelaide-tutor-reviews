@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Adelaide Tutor Reviews</title>
+  <meta name="description" content="Suggest a tutor to review, respond to a review or ask a question. Contact Adelaide Tutor Reviews.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231d3a5f'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fff' font-family='Georgia,serif' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">A</span>
+        Adelaide Tutor Reviews
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Reviews</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container narrow">
+      <header class="page-header">
+        <p class="eyebrow">Get in touch</p>
+        <h1>Contact</h1>
+        <p class="lede">Know a tutor Adelaide families should hear about, good or bad? Are you a tutor who wants to respond to a review? Drop me a line.</p>
+      </header>
+
+      <div class="page-body">
+
+        <!-- ==========================================================
+             SETTING UP THE FORM (one-time, ~2 minutes)
+             This form uses Formspree, a free service that emails you
+             each submission (no server needed).
+               1. Sign up free at https://formspree.io
+               2. Create a form and copy its ID (looks like "mqkrzabc")
+               3. Replace YOUR_FORM_ID in the action below with it.
+             Until then, the form won't send; the email link below
+             the form works as a fallback.
+             ========================================================== -->
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <label for="cf-name">Your name</label>
+            <input type="text" id="cf-name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-row">
+            <label for="cf-email">Your email</label>
+            <input type="email" id="cf-email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-row">
+            <label for="cf-reason">What's this about?</label>
+            <select id="cf-reason" name="reason">
+              <option>Suggest a tutor to review</option>
+              <option>I'm a tutor responding to a review</option>
+              <option>Share my experience with a tutor</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" required placeholder="Tell me the tutor's name, suburb and subject if you're suggesting a review…"></textarea>
+          </div>
+          <button class="btn" type="submit">Send message</button>
+        </form>
+
+        <!-- TODO: replace with your real contact email -->
+        <p>Prefer email? Write to me directly at <a href="mailto:hello@example.com">hello@example.com</a>.</p>
+
+        <div class="callout">
+          <strong>Suggesting a tutor?</strong> The most useful tips include the tutor's name or business, their suburb, the subject and year level, plus a sentence about your experience. I never quote families by name without permission.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">Adelaide Tutor Reviews</div>
+        <p>First-hand, independent reviews of tutors and tutoring centres across Adelaide, South Australia. Written by a local, for local families.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">All reviews</a></li>
+          <li><a href="about.html">About &amp; methodology</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Disclaimer</h4>
+        <p>Reviews reflect my personal opinions and experiences at the time of writing. Prices and availability change, so always confirm details with the tutor directly.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Adelaide Tutor Reviews · All opinions my own</div>
+  </footer>
+
+</body>
+</html>

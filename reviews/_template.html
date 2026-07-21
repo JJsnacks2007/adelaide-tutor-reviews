@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ==========================================================
+       REVIEW TEMPLATE - how to add a new review
+       ==========================================================
+       1. Copy this file and rename it, e.g. "jane-smith-maths-burnside.html"
+          (lowercase, hyphens, no spaces).
+       2. Replace every part marked with TODO below.
+       3. Add a matching entry to js/reviews-data.js so the review
+          appears on the homepage (use the same file name as the "slug").
+
+       Subject colours you can use in the two style="background:..." spots:
+         Maths      var(--c-maths)
+         English    var(--c-english)
+         Science    var(--c-science)
+         Primary    var(--c-primary)
+         Languages  var(--c-languages)
+         Music      var(--c-music)
+
+       Star widths: the stars are drawn by the style="width:XX%" values.
+         5.0 → 100%   4.5 → 90%   4.0 → 80%   3.5 → 70%
+         3.0 → 60%    2.5 → 50%   2.0 → 40%   1.5 → 30%
+       ========================================================== -->
+
+  <title>TODO Tutor Name review | Adelaide Tutor Reviews</title>
+  <meta name="description" content="TODO one-sentence description of this review for search engines.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231d3a5f'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fff' font-family='Georgia,serif' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">A</span>
+        Adelaide Tutor Reviews
+      </a>
+      <nav class="site-nav">
+        <a href="../index.html" class="active">Reviews</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <header class="article-header">
+        <a class="breadcrumb" href="../index.html">← All reviews</a>
+
+        <!-- TODO: tutor / business name -->
+        <h1>TODO Tutor Name</h1>
+
+        <div class="article-meta">
+          <!-- TODO: subject name + matching colour variable -->
+          <span class="tag" style="background:var(--c-maths)">Maths</span>
+          <!-- TODO: suburb -->
+          <span>📍 Suburb</span>
+          <span class="dot">·</span>
+          <!-- TODO: date -->
+          <span>Reviewed 1 January 2026</span>
+        </div>
+
+        <div class="overall">
+          <!-- TODO: overall stars: set width % (see table above) and the aria-label -->
+          <span class="stars lg" role="img" aria-label="4.0 out of 5 stars"><span class="stars-fill" style="width:80%"></span></span>
+          <!-- TODO: overall score -->
+          <span class="score">4.0</span>
+          <span class="out-of">out of 5</span>
+        </div>
+      </header>
+
+      <div class="article-layout">
+        <article class="article-body">
+
+          <!-- TODO: write your review. Keep the <h2> section headings,
+               or rename them, whatever suits the review. -->
+          <h2>The experience</h2>
+          <p>TODO: describe how you found the tutor, what a session looks like, what you observed.</p>
+          <p>TODO: a second paragraph if you need it.</p>
+
+          <h2>What stood out</h2>
+          <p>TODO: the best things about this tutor.</p>
+
+          <h2>Room to improve</h2>
+          <p>TODO: the honest downsides.</p>
+
+          <div class="pros-cons">
+            <div class="pc pros">
+              <h3>Pros</h3>
+              <ul>
+                <!-- TODO: 2-4 pros -->
+                <li>First pro</li>
+                <li>Second pro</li>
+              </ul>
+            </div>
+            <div class="pc cons">
+              <h3>Cons</h3>
+              <ul>
+                <!-- TODO: 2-4 cons -->
+                <li>First con</li>
+                <li>Second con</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="verdict">
+            <!-- TODO: overall score again -->
+            <div class="v-score">4.0<small>out of 5</small></div>
+            <div>
+              <h3>The verdict</h3>
+              <!-- TODO: 1-2 sentence summary judgement -->
+              <p>TODO: your bottom-line recommendation.</p>
+            </div>
+          </div>
+        </article>
+
+        <aside class="sidebar">
+          <div class="panel">
+            <h3>Quick facts</h3>
+            <dl class="facts">
+              <!-- TODO: fill in the facts -->
+              <div><dt>Subject</dt><dd>Maths</dd></div>
+              <div><dt>Suburb</dt><dd>Suburb</dd></div>
+              <div><dt>Students</dt><dd>Years 7-12</dd></div>
+              <div><dt>Format</dt><dd>In person</dd></div>
+              <div><dt>Price</dt><dd>$50 / hr</dd></div>
+            </dl>
+          </div>
+          <div class="panel">
+            <h3>Rating breakdown</h3>
+            <!-- TODO: adjust the four scores: set both the number and the width % -->
+            <div class="score-row">
+              <div class="score-label"><span>Teaching quality</span><span>4.0</span></div>
+              <div class="bar"><i style="width:80%"></i></div>
+            </div>
+            <div class="score-row">
+              <div class="score-label"><span>Communication</span><span>4.0</span></div>
+              <div class="bar"><i style="width:80%"></i></div>
+            </div>
+            <div class="score-row">
+              <div class="score-label"><span>Value for money</span><span>4.0</span></div>
+              <div class="bar"><i style="width:80%"></i></div>
+            </div>
+            <div class="score-row">
+              <div class="score-label"><span>Reliability</span><span>4.0</span></div>
+              <div class="bar"><i style="width:80%"></i></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">Adelaide Tutor Reviews</div>
+        <p>First-hand, independent reviews of tutors and tutoring centres across Adelaide, South Australia. Written by a local, for local families.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="../index.html">All reviews</a></li>
+          <li><a href="../about.html">About &amp; methodology</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Disclaimer</h4>
+        <p>Reviews reflect my personal opinions and experiences at the time of writing. Prices and availability change, so always confirm details with the tutor directly.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Adelaide Tutor Reviews · All opinions my own</div>
+  </footer>
+
+</body>
+</html>

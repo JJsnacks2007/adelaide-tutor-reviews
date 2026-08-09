@@ -10,12 +10,12 @@
 
    Fields:
      slug     - file name of the review page (without .html)
-     name     - tutor or business name shown on the card
-     subject  - ONE of: Maths, English, Science, Primary, Languages, Music
+     name     - tutoring company name shown on the card
+     subject  - ONE of: Maths, English, Science, Primary, All subjects
                 (used for the coloured tag and the filter chips)
-     suburb   - Adelaide suburb (used for the suburb filter)
-     format   - e.g. "In person & online"
-     price    - e.g. "$60 / hr"
+     suburb   - Adelaide location (used for the location filter)
+     format   - e.g. "In home & online, one-to-one"
+     price    - e.g. "$59 / hr online"
      rating   - overall score out of 5 (halves allowed, e.g. 4.5)
      date     - date reviewed, format YYYY-MM-DD (used for sorting)
      excerpt  - 1-2 sentence summary shown on the card
@@ -24,81 +24,81 @@
 
 const REVIEWS = [
   {
-    slug: "brightpath-maths-norwood",
-    name: "BrightPath Maths Tutoring",
-    subject: "Maths",
-    suburb: "Norwood",
-    format: "In person & online",
-    price: "$60 / hr",
-    rating: 4.5,
-    date: "2026-06-14",
-    excerpt:
-      "A structured, SACE-focused maths specialist who rebuilt my Year 11 student's confidence in a single term. Not the cheapest in the eastern suburbs, but you can see where the money goes.",
-    search: "SACE mathematical methods specialist year 11 12 daniel eastern suburbs exam preparation"
-  },
-  {
-    slug: "sarah-whitfield-english-glenelg",
-    name: "Sarah Whitfield English & Essay Coaching",
-    subject: "English",
-    suburb: "Glenelg",
-    format: "In person & online",
-    price: "$55 / hr",
-    rating: 5,
-    date: "2026-07-02",
-    excerpt:
-      "The best feedback-giver I've watched work in Adelaide. Essays come back covered in specific, actionable comments, and her students actually rewrite them. Book early; her waitlist is real.",
-    search: "essay writing year 12 english literary persuasive text analysis feedback beachside west"
-  },
-  {
-    slug: "adelaide-science-hub-cbd",
-    name: "Adelaide Science Hub",
+    slug: "topmark-tutors-adelaide",
+    name: "TopMark Tutors",
     subject: "Science",
-    suburb: "Adelaide CBD",
-    format: "Small groups, in person",
-    price: "$49 / class",
-    rating: 3.5,
-    date: "2026-05-21",
+    suburb: "Adelaide",
+    format: "One-to-one, small group & mentoring",
+    price: "Free consultation",
+    rating: 5,
+    date: "2026-08-04",
     excerpt:
-      "Knowledgeable chemistry and physics tutors let down by crowded classes and patchy admin. Good value if your student thrives in a group; less so if they need individual attention.",
-    search: "chemistry physics biology group classes city SACE stage 2 practical exams"
+      "Founded by two Flinders medical students with 99+ ATARs, TopMark pairs its own textbooks with one-to-one teaching and mentoring. Every 2025 student scored a 90 or higher ATAR.",
+    search: "SACE physics chemistry mathematical methods specialist maths biology UCAT medicine dentistry business innovation year 11 12 ahmed aly ali alebadi flinders atar merit"
   },
   {
-    slug: "little-sprouts-literacy-prospect",
-    name: "Little Sprouts Literacy",
-    subject: "Primary",
-    suburb: "Prospect",
-    format: "In person",
-    price: "$45 / 45 min",
-    rating: 4,
-    date: "2026-04-18",
-    excerpt:
-      "A warm, phonics-based reading program for primary students that parents rave about. Sessions are genuinely fun. My only quibbles are the waitlist and limited after-school slots.",
-    search: "reading phonics spelling primary school years 1 2 3 4 dyslexia friendly north"
-  },
-  {
-    slug: "lingua-adelaide-unley",
-    name: "Lingua Adelaide (Mia Trentino)",
-    subject: "Languages",
-    suburb: "Unley",
-    format: "In person & online",
-    price: "$50 / hr",
+    slug: "alchemy-tuition-adelaide",
+    name: "Alchemy Tuition",
+    subject: "English",
+    suburb: "All Adelaide suburbs",
+    format: "In home & online, one-to-one",
+    price: "$59 / hr online",
     rating: 4.5,
-    date: "2026-03-29",
+    date: "2026-07-21",
     excerpt:
-      "Conversation-first French and Italian tutoring that gets students speaking from lesson one. Brilliant for confidence and SACE orals; grammar drilling takes a back seat, for better or worse.",
-    search: "french italian conversation oral exam continuers beginners adults high school"
+      "In-home and online one-to-one tutoring across every subject from Reception to Year 12, with carefully vetted tutors, reports after every lesson and a free first lesson if the match is not right.",
+    search: "in home tutoring all suburbs kindergarten reception year 12 english maths biology chemistry physics history geography economics working with children check guarantee pay as you go"
   },
   {
-    slug: "harmony-lane-music-mawson-lakes",
-    name: "Harmony Lane Music Studio",
-    subject: "Music",
-    suburb: "Mawson Lakes",
-    format: "In person",
-    price: "$40 / 30 min",
-    rating: 3,
-    date: "2026-02-10",
+    slug: "tutors-sa-campbelltown-mitcham",
+    name: "Tutors SA",
+    subject: "All subjects",
+    suburb: "Campbelltown & Mitcham",
+    format: "Small group, one-to-one & hybrid",
+    price: "Published fee schedule",
+    rating: 4.5,
+    date: "2026-07-06",
     excerpt:
-      "Talented piano and guitar teachers undermined by constant scheduling chaos and teacher turnover. Fine for casual learners; frustrating if you're working towards AMEB exams.",
-    search: "piano guitar AMEB exams beginner kids lessons north northern suburbs"
+      "Two Adelaide centres, the broadest subject list here and tutors who mostly hold postgraduate degrees. The clear first stop for ACER, Ignite and STEM scholarship exam preparation.",
+    search: "campbelltown kingswood mitcham reception year 12 accounting psychology legal studies nutrition information technology research project UCAT scholarship ACER ignite STEM australian tutoring association phd masters registered teachers"
+  },
+  {
+    slug: "adelaide-tutors-camden-park",
+    name: "Adelaide Tutors",
+    subject: "Maths",
+    suburb: "Camden Park",
+    format: "Small groups, in person",
+    price: "Contact for rates",
+    rating: 4.5,
+    date: "2026-06-15",
+    excerpt:
+      "A focused senior maths and physics specialist on Anzac Highway, teaching Methods, Specialist and Physics in classes capped at six with structured lessons and exam-style practice.",
+    search: "mathematical methods specialist mathematics physics years 8 9 10 maths anzac highway western southwestern suburbs small classes exam practice SACE"
+  },
+  {
+    slug: "kip-mcgrath-adelaide",
+    name: "Kip McGrath Education Centres",
+    subject: "Primary",
+    suburb: "Highgate, Salisbury & Morphett Vale",
+    format: "Small groups in centre or online",
+    price: "Free assessment",
+    rating: 4.5,
+    date: "2026-05-25",
+    excerpt:
+      "English and maths for primary and secondary students, starting with a free assessment run by a qualified teacher and a programme that works topic by topic until your child catches up.",
+    search: "reading spelling numeracy english maths primary school catch up learning gaps assessment highgate salisbury morphett vale digital whiteboard progress reports"
+  },
+  {
+    slug: "kinetic-education-adelaide",
+    name: "Kinetic Education",
+    subject: "Maths",
+    suburb: "Online, Adelaide wide",
+    format: "Online with weekly one-to-one",
+    price: "From $29 / week",
+    rating: 4,
+    date: "2026-05-11",
+    excerpt:
+      "Thirty years of tutoring behind an online platform that pairs self-paced maths and English work with a weekly one-to-one session. Easily the best value option on this site.",
+    search: "online tutoring cheap affordable high school years 7 8 9 10 11 12 maths doctor english wiz SACE australian curriculum two free weeks screen share regional"
   }
 ];

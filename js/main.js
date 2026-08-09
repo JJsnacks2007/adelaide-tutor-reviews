@@ -25,6 +25,7 @@
     English: "var(--c-english)",
     Science: "var(--c-science)",
     Primary: "var(--c-primary)",
+    "All subjects": "var(--c-all)",
     Languages: "var(--c-languages)",
     Music: "var(--c-music)"
   };
@@ -74,7 +75,7 @@
     var b = document.createElement("button");
     b.type = "button";
     b.className = "chip" + (s === "All" ? " active" : "");
-    b.textContent = s === "All" ? "All subjects" : s;
+    b.textContent = s === "All" ? "Show all" : s;
     b.dataset.subject = s;
     b.addEventListener("click", function () {
       state.subject = s;
@@ -99,9 +100,9 @@
     var avg =
       REVIEWS.reduce(function (t, r) { return t + r.rating; }, 0) / REVIEWS.length;
     statsEl.innerHTML =
-      "<div><strong>" + REVIEWS.length + "</strong>tutors reviewed</div>" +
-      "<div><strong>" + subjects.length + "</strong>subjects covered</div>" +
-      "<div><strong>" + suburbs.length + "</strong>suburbs visited</div>" +
+      "<div><strong>" + REVIEWS.length + "</strong>providers reviewed</div>" +
+      "<div><strong>" + subjects.length + "</strong>subject areas</div>" +
+      "<div><strong>" + suburbs.length + "</strong>locations covered</div>" +
       "<div><strong>" + avg.toFixed(1) + "★</strong>average rating</div>";
   }
 

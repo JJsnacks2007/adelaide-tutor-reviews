@@ -4,19 +4,19 @@ A clean, professional review blog built with plain HTML, CSS and JavaScript.
 No build tools, no database, nothing to install. Open `index.html` in a
 browser and it works.
 
-> **Important:** all six tutors currently on the site (BrightPath, Sarah
-> Whitfield, Adelaide Science Hub, Little Sprouts, Lingua Adelaide, Harmony
-> Lane) are **fictional placeholders** written so you can see the layout.
-> Swap in your real reviews before you promote the site or attach your
-> domain. Don't leave the sample reviews up as if they were real businesses.
+The site currently covers six real Adelaide tutoring companies: TopMark
+Tutors, Alchemy Tuition, Tutors SA, Adelaide Tutors, Kip McGrath Education
+Centres and Kinetic Education. Each write-up is compiled from what that
+company publishes on its own website, and every review links back to the
+source.
 
 ## What's inside
 
 ```
 adelaide-tutor-reviews/
 ├── index.html            ← homepage: hero, search, filters, review cards
-├── about.html            ← who you are + how you score tutors
-├── contact.html          ← contact form (needs 2-min Formspree setup)
+├── about.html            ← who you are + how you score providers
+├── contact.html          ← contact form (live, via Web3Forms)
 ├── README.md             ← this file
 ├── css/
 │   └── style.css         ← all styling (colours, layout, fonts)
@@ -30,17 +30,19 @@ adelaide-tutor-reviews/
 
 ## Features
 
-- **Search box:** finds reviews by tutor name, subject, suburb or keyword
-- **Filters:** subject chips + suburb dropdown, combinable with search
+- **Search box:** finds reviews by company, subject, location or keyword
+- **Filters:** subject chips + location dropdown, combinable with search
 - **Sorting:** newest first or highest rated
 - **Star ratings:** overall score on cards, plus a four-category breakdown
-  (teaching, communication, value, reliability) on each review page
+  (teaching approach, subject coverage, parent communication, value and
+  accessibility) on each review page
+- **Contact form:** already live, no setup needed
 - Fully responsive (phone / tablet / desktop), no cookies, no tracking
 
 ## How to add a new review (3 steps)
 
 1. **Copy the template.** Duplicate `reviews/_template.html` and rename it,
-   e.g. `reviews/jane-smith-maths-burnside.html` (lowercase, hyphens).
+   e.g. `reviews/smith-tutoring-burnside.html` (lowercase, hyphens).
 2. **Write the review.** Open your new file. Every spot you need to edit is
    marked with `TODO`, including a cheat-sheet for the star widths.
 3. **Add it to the homepage.** Open `js/reviews-data.js`, copy one of the
@@ -51,13 +53,21 @@ adelaide-tutor-reviews/
 To **remove** a review: delete its entry in `js/reviews-data.js` and delete
 its page from `reviews/`.
 
-## One-time setup before you promote the site
+## The contact form
 
-- **Contact form:** sign up free at [formspree.io](https://formspree.io),
-  create a form and replace `YOUR_FORM_ID` in `contact.html` with your form
-  ID. Also replace `hello@example.com` on that page with your real email.
+The form on `contact.html` is wired to [Web3Forms](https://web3forms.com)
+using your access key, so it already works. Submissions are emailed to the
+address registered against that key. If you want messages to go to a
+different inbox, change it in your Web3Forms dashboard rather than in the
+HTML.
+
+The form includes a hidden `botcheck` field that catches most spam bots.
+Leave it in place.
+
+## Before you promote the site
+
 - **About page:** rewrite the "Who's behind this" section in `about.html`
-  with your real story (marked with a TODO comment).
+  with your real story (it's marked with a TODO comment).
 - **Site name:** if you'd rather call the blog something else,
   search-and-replace "Adelaide Tutor Reviews" across the HTML files.
 
@@ -100,10 +110,18 @@ the stars or `--bg` for the page background. Headings use the free Google
 font "Fraunces" and body text uses "Inter"; swap them in the `<link>` tag
 in each HTML file if you'd like different fonts.
 
-## A small legal note
+## Writing about real businesses
 
-You're publishing opinions about real businesses, so: stick to honest,
-first-hand experience, keep records of what happened, present opinions as
-opinions and be accurate with facts (prices, dates, what was said). The
-disclaimer in the site footer helps, but fair and factual writing is the
-real protection. (This is general information, not legal advice.)
+The reviews here are researched desk reviews, built from each company's own
+published material and attributed in a source note at the bottom of every
+page. That framing matters. Keeping to it protects you and keeps the site
+credible:
+
+- Stick to facts a company publishes about itself, and attribute them.
+- Present opinions clearly as opinions, and keep them fair.
+- Link to the source so readers can verify anything you state.
+- Update or correct a page promptly if a provider tells you something has
+  changed. There's a note inviting exactly that on the contact page.
+- Don't describe lessons, visits or conversations that did not happen.
+
+(This is general information, not legal advice.)

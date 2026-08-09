@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Adelaide Tutor Reviews</title>
-  <meta name="description" content="Suggest a tutor to review, respond to a review or ask a question. Contact Adelaide Tutor Reviews.">
+  <meta name="description" content="Suggest a tutoring company to review, correct a review or ask a question. Contact Adelaide Tutor Reviews.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231d3a5f'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fff' font-family='Georgia,serif' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,22 +32,30 @@
       <header class="page-header">
         <p class="eyebrow">Get in touch</p>
         <h1>Contact</h1>
-        <p class="lede">Know a tutor Adelaide families should hear about, good or bad? Are you a tutor who wants to respond to a review? Drop me a line.</p>
+        <p class="lede">Know a tutoring company Adelaide families should hear about? Are you a provider who wants to update or correct a review? Drop me a line.</p>
       </header>
 
       <div class="page-body">
 
         <!-- ==========================================================
-             SETTING UP THE FORM (one-time, ~2 minutes)
-             This form uses Formspree, a free service that emails you
-             each submission (no server needed).
-               1. Sign up free at https://formspree.io
-               2. Create a form and copy its ID (looks like "mqkrzabc")
-               3. Replace YOUR_FORM_ID in the action below with it.
-             Until then, the form won't send; the email link below
-             the form works as a fallback.
+             THE CONTACT FORM
+             This form runs on Web3Forms, which emails each submission
+             straight to you. No server needed and nothing to maintain.
+
+             The access_key below is already yours. Messages are
+             delivered to the email address registered with that key at
+             web3forms.com, so change it there if you ever want them to
+             go somewhere else.
              ========================================================== -->
-        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+          <input type="hidden" name="access_key" value="450600da-e9f7-49f3-a361-91b312353474">
+          <input type="hidden" name="subject" value="New message from Adelaide Tutor Reviews">
+          <input type="hidden" name="from_name" value="Adelaide Tutor Reviews">
+
+          <!-- Spam trap. Real people never see or fill this in. -->
+          <input type="checkbox" name="botcheck" tabindex="-1" style="display:none" aria-hidden="true">
+
           <div class="form-row">
             <label for="cf-name">Your name</label>
             <input type="text" id="cf-name" name="name" required autocomplete="name">
@@ -59,24 +67,26 @@
           <div class="form-row">
             <label for="cf-reason">What's this about?</label>
             <select id="cf-reason" name="reason">
-              <option>Suggest a tutor to review</option>
-              <option>I'm a tutor responding to a review</option>
-              <option>Share my experience with a tutor</option>
+              <option>Suggest a tutoring company to review</option>
+              <option>I'm a provider correcting or updating a review</option>
+              <option>Question about a review</option>
               <option>Something else</option>
             </select>
           </div>
           <div class="form-row">
             <label for="cf-message">Message</label>
-            <textarea id="cf-message" name="message" required placeholder="Tell me the tutor's name, suburb and subject if you're suggesting a review…"></textarea>
+            <textarea id="cf-message" name="message" required placeholder="Tell me the company name, the suburbs they cover and the subjects they teach if you're suggesting a review…"></textarea>
           </div>
           <button class="btn" type="submit">Send message</button>
+          <p class="form-note">Your message goes straight to my inbox. I'll usually reply within a few days.</p>
         </form>
 
-        <!-- TODO: replace with your real contact email -->
-        <p>Prefer email? Write to me directly at <a href="mailto:hello@example.com">hello@example.com</a>.</p>
+        <div class="callout">
+          <strong>Suggesting a company?</strong> The most useful tips include the business name, a link to their website, the suburbs or centres they operate from, and the subjects and year levels they cover.
+        </div>
 
         <div class="callout">
-          <strong>Suggesting a tutor?</strong> The most useful tips include the tutor's name or business, their suburb, the subject and year level, plus a sentence about your experience. I never quote families by name without permission.
+          <strong>Are you a tutoring provider?</strong> If anything in your review is out of date or inaccurate, send me the correct details and a link, and I'll update the page and note the correction. There is no charge for this and no charge to be reviewed in the first place.
         </div>
       </div>
     </div>
@@ -86,7 +96,7 @@
     <div class="container footer-inner">
       <div>
         <div class="footer-brand">Adelaide Tutor Reviews</div>
-        <p>First-hand, independent reviews of tutors and tutoring centres across Adelaide, South Australia. Written by a local, for local families.</p>
+        <p>Independent write-ups of tutoring companies across Adelaide, South Australia, compiled from what each provider publishes about its programs, tutors and results.</p>
       </div>
       <div>
         <h4>Explore</h4>
@@ -98,7 +108,7 @@
       </div>
       <div>
         <h4>Disclaimer</h4>
-        <p>Reviews reflect my personal opinions and experiences at the time of writing. Prices and availability change, so always confirm details with the tutor directly.</p>
+        <p>Ratings reflect my own assessment of publicly available information at the time of writing. Programs, prices and availability change, so always confirm details with the provider directly.</p>
       </div>
     </div>
     <div class="footer-bottom">© 2026 Adelaide Tutor Reviews · All opinions my own</div>
